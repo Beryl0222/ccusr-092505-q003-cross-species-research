@@ -20,10 +20,17 @@
       "type": "string",
       "enum": [
         "BATCH_REGISTERED",
+        "FILES_VERIFIED",
         "ANNOTATION_LOCKED",
         "ANALYSIS_STARTED",
+        "SHARD_COMMITTED",
+        "ANALYSIS_COMPLETED",
+        "REVIEW_APPROVED",
         "REVIEW_REVOKED",
-        "CLAIM_RELEASED"
+        "RUN_INVALIDATED",
+        "CLAIM_RELEASED",
+        "CLAIM_ASSET_PUBLISHED",
+        "CLAIM_FLAGGED"
       ]
     },
     "aggregate_type": {
