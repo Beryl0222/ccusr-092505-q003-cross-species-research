@@ -19,20 +19,33 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "SOURCE_REGISTERED",
         "BATCH_REGISTERED",
         "ANNOTATION_LOCKED",
+        "FILTER_PROFILE_DEFINED",
         "ANALYSIS_STARTED",
+        "SHARD_COMPLETED",
+        "ANALYSIS_COMPLETED",
+        "CORRESPONDENCE_ASSERTED",
+        "REVIEW_APPROVED",
         "REVIEW_REVOKED",
-        "CLAIM_RELEASED"
+        "RANKING_REBUILT",
+        "CLAIM_RELEASED",
+        "CLAIM_LIMITED",
+        "ASSET_PUBLISHED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
+        "species_source",
         "specimen_batch",
         "annotation_revision",
+        "filter_profile",
         "analysis_run",
-        "research_claim"
+        "correspondence",
+        "research_claim",
+        "publication_asset"
       ]
     },
     "aggregate_id": {
@@ -50,6 +63,9 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true
